@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/input.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Filmklubben 🍿</title>
+</head>
+
+<body id="start">
+  <div class="root flex flex-col">
+    <header>
+      <div class="container header-container flex justify-between items-center flex-row">
+        <h1><a href="index.html">Filmklubben 🎥</a></h1>
+        <nav>
+          <ul class="flex">
+            <li><a href="#filmer">Filmer</a></li>
+            <li><a href="#om">Om oss</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container main-container">
+        <div class="hero" id="hero">
+          <h2>Vi älskar film!</h2>
+          <p>Recensioner på de senaste filmerna!🍿</p>
+        </div>
+      </div>
+      <div class="film-container" id="filmer">
+        <h3>Filmer</h3>
+        <div class="img-list flex flex-row justify-center items-center">
+          <div>
+            <img src="src/images/Inception-(2010).jpeg" alt="Inception">
+            <p class="img-desc">Inception (2010)</p>
+            <p class="movie-desc">En oförglömlig upplevelse och mästerverk från Nolan!</p>
+            <p>⭐️⭐️⭐️⭐️⭐️</p>
+          </div>
+          <div>
+            <img src="src/images/Tenet-(2020).jpeg" alt="Tenet">
+            <p class="img-desc">Tenet (2020)</p>
+            <p class="movie-desc">Inception på steroider!</p>
+            <p>⭐️⭐️⭐️⭐️</p>
+          </div>
+          <div>
+            <img src="src/images/Blood-Diamond-(2006).jpeg" loading="lazy" alt="Blood Diamond">
+            <p class="img-desc">Blood Diamond (2006)</p>
+            <p class="movie-desc">En gripande och kraftfull berättelse!</p>
+            <p>⭐️⭐️⭐️⭐️</p>
+          </div>
+        </div>
+      </div>
+      <div class="om-container" id="om">
+        <h3>Om oss</h3>
+        <div class="om-desc">
+          <p>Det är ingen hemlighet att vi <mark>älskar</mark> film, vem gör inte det? Ännu roligare är det att se film
+            ihop,
+            framförallt när det är en klurig film som man kan diskutera
+            åtskilliga timmar efteråt.</p>
+          <p>Vi är ett glatt gäng <mark>vänner</mark> som tänkte ta filmtittandet till en ny nivå - sagt och gjort!</p>
+          <p>🍿</p>
+        </div>
+      </div>
+      <div class="kontakt-container" id="kontakt">
+        <h3>Kontakt</h3>
+        <p>Har du tips på en film vi inte sätt, men helt enkelt måste se? </p>
+        <p>Kontakt gärna oss då genom formuläret nedan.</p>
+        <form>
+          <h4>Tipsa oss!</h4>
+          <fieldset>
+            <label for="namn">Namn:</label>
+            <input type="text" name="namn" id="namn" placeholder="Skriv här..">
+            <label for="tips">Tips:</label>
+            <input type="text" name="tips" id="tips" placeholder="Skriv här..">
+            <label for="kommentar">Kommentar:</label>
+            <textarea name="kommentar" id="kommentar" cols="30" rows="7"></textarea>
+            <input type="button" value="Skicka">
+          </fieldset>
+        </form>
+      </div>
+    </main>
+  </div>
+  <a href="#start" class="bttt" id="btn">&#x2191;</a>
+  <script src="script.js"></script>
+</body>
+
+</html>
